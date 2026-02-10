@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibify</title>
+    <link rel="icon" href="Images/Vibify Icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/Utility.css">
+
+    <!-- Icon Linking -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    
+    <img src="Images/Vibify.png" alt="Spotify" id="Logo">
+    <img class="Invert Hamburger" src="Images/Hamburger.svg" alt="">
+    <button class="Homebtn"><img src="Images/Home.svg" alt="Home" id="Homelogo" class="Invert"></button>
+    <div class="Signupbtn"><a href="">Sign up</a></div>
+    <button class="Loginbtn">Log in</button>
+
+    <div class="MainPage Flex">
+
+        <div class="Library Border Bg_Grey">
+            <div class="Closebtn">
+                <img class="Invert" src="Images/Close.svg" alt="">
+            </div>
+            <div class="Heading">
+                <img src="Images/LibLogo.svg" alt="Library_Logo" id="Liblogo" class="Invert">
+                <h2>Your Library</h2>
+            </div>
+            <div class="SongList">
+                <ul></ul>
+            </div>
+            <div class="Footer">
+                <nav>
+                    <ul>
+                        <li><a href="https://www.spotify.com/in-en/legal/">Legal</a></li>
+                        <li><a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a></li>
+                        <li><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></li>
+                        <li><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></li>
+                        <li><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="Home Border">
+            <div class="Spotify_Playlists">
+                <h1>Vibify Playlists</h1>
+                <div class="Card_Container"></div>
+            </div>
+
+            <div class="Playbar">
+                <div class="SongCTRLandDetails">
+                    <div class="SongDetails"></div>
+                    <div class="SongButtons">
+                        <i id="Previous" class="ri-skip-left-fill"></i>
+                        <i><img id="Play" class="Invert" src="Images/Play.svg"></i>
+                        <i id="Next" class="ri-skip-right-fill"></i>
+                    </div>
+                    <div class="Vol">
+                        <img class="Invert" src="Images/Volume.svg" alt="">
+                        <div class="Range">
+                        <input type="range" name="Volume" id="VolRange">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Seekbar">
+                    <div class="Circle"></div>
+                </div>
+                <div class="SongTime"> </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="JS/script.js" defer></script>
+</body>
+
+</html>

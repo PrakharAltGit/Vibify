@@ -1,0 +1,29 @@
+.Border{
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.Flex{
+    display: flex;
+}
+
+.Justify_Content_Center{
+    justify-content: center;
+}
+
+.Text_Align_Center{
+    text-align: center;
+}
+
+.Align_Items_Center{
+    align-items: center;
+}
+
+.Bg_Grey{
+    background-color: #121212;
+}
+
+.Invert{
+    filter: invert(1);
+}
+

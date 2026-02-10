@@ -1,0 +1,571 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* For Webkit browsers (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    height: 10px;
+    border: 3px solid #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555555;
+}
+
+/* Remove scrollbar buttons (arrows) */
+::-webkit-scrollbar-button {
+    display: none;
+    /* Hides the arrows */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: 10px;
+    scrollbar-color: #3a3a3a #1e1e1e;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.MainPage {
+    position: absolute;
+    top: 3.7rem;
+}
+
+#Logo {
+    position: absolute;
+    width: 40px;
+    top: 12px;
+    left: 1.8rem;
+}
+
+.Hamburger{
+display: none;
+}
+
+.Homebtn {
+    position: absolute;
+    background-color: #121212;
+    border-radius: 45px;
+    width: 45px;
+    height: 45px;
+    top: 0.7rem;
+    left: 25rem;
+}
+
+#Homelogo {
+    position: absolute;
+    width: 27px;
+    top: 6px;
+    left: 7px;
+}
+
+.Signupbtn {
+    position: absolute;
+    right: 8rem;
+    top: 1.4rem;
+    background-color: transparent;
+    font-family: Montserrat;
+    transition: all 0.05s ease-in;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.Signupbtn a {
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+}
+
+.Signupbtn:hover {
+    font-size: 17px;
+    color: white;
+    top: 1.3rem;
+    right: 7.9rem;
+}
+
+.Signupbtn a:hover {
+    color: white;
+}
+
+.Loginbtn {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    border: none;
+    background-color: white;
+    color: black;
+    font-family: Montserrat;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 100px;
+    height: 3rem;
+}
+
+.Loginbtn:hover {
+    width: 102px;
+    height: 3.1rem;
+    border-radius: 26px;
+    cursor: pointer;
+    top: 0.45rem;
+    font-weight: bolder;
+    background-color: rgb(230, 228, 228);
+    right: 0.95rem;
+    font-size: 17px;
+}
+
+
+/* Library(Left Side) */
+
+.Library {
+    position: relative;
+    width: 25vw;
+    height: 85vh;
+    left: 0%;
+}
+
+.Library .Closebtn{
+    display: none;
+}
+
+.Heading {
+    position: relative;
+    font-family: Roboto Condensed;
+    font-size: 15px;
+    padding-bottom: 20px;
+    gap: 1.8rem;
+    color: white;
+    top: 20px;
+    left: 1.5rem;
+    align-items: center;
+    display: flex;
+}
+
+.Heading img {
+    width: 33px;
+}
+
+.SongList {
+    position: relative;
+    height: 430px;
+    top: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.SongList ul {
+    padding: 8px;
+    list-style: none;
+}
+
+.SongList ul li {
+    position: relative;
+    display: flex;
+    font-family: Montserrat;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 10px 0px;
+    padding: 8px;
+    width: 18rem;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.SongList ul li:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.SongList ul li:hover img {
+    opacity: 0;
+}
+
+.PlayNow .ri-play-fill {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 20%;
+    left: 10px;
+    opacity: 0;
+}
+
+.SongList ul li:hover .PlayNow .ri-play-fill {
+    opacity: 1;
+}
+
+.Footer nav ul {
+    position: absolute;
+    list-style: none;
+    font-size: 13px;
+    font-family: Montserrat;
+    bottom: 1rem;
+    display: flex;
+    left: 1rem;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 2px;
+}
+
+.Footer a {
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+    display: inline;
+}
+
+
+
+
+/* Home(Right Side) */
+
+.Home {
+    position: relative;
+    width: 72.5vw;
+    height: 72vh;
+    max-height: 90vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    background: linear-gradient(#4d4d4d, #121212, #121212);
+}
+
+.Spotify_Playlists {
+    padding: 20px;
+}
+
+.Spotify_Playlists h1 {
+    font-family: Montserrat;
+}
+
+.Card {
+    margin-top: 10px;
+}
+
+.Card_Container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.Card:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.Card:hover .ri-play-fill {
+    opacity: 1;
+    transform: translateY(-0.7rem);
+}
+
+.Card {
+    position: relative;
+    border-radius: 8px;
+    font-family: Montserrat;
+    font-size: 12px;
+    padding: 10px;
+    width: 150px;
+}
+
+.Card .ri-play-fill {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.18s ease-in;
+    color: black;
+    top: 7.8rem;
+    font-size: 30px;
+    padding-left: 3px;
+    padding-top: 6px;
+    right: 1rem;
+    justify-content: center;
+    text-align: center;
+    width: 42px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #1ed760;
+}
+
+.Card .ri-play-fill:hover {
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    padding-left: 4px;
+    padding-top: 7px;
+    width: 43px;
+    height: 41px;
+    border-radius: 41px;
+}
+
+.Card>* {
+    padding-top: 5px;
+}
+
+.Card img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.Playbar {
+    position: fixed;
+    bottom: 0px;
+    width: 68vw;
+    height: 40px;
+    padding: 40px;
+    background-color: black;
+}
+
+.SongCTRLandDetails{
+    position: relative;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 1.5rem;
+}
+
+.SongCTRLandDetails .SongDetails{
+    width: 320px;
+}
+
+.SongCTRLandDetails .SongTime{
+    width: 110px;
+}
+
+.SongButtons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.SongButtons i, img{
+    cursor: pointer;
+}
+
+.Playbar .ri-skip-left-fill {
+    color: white;
+    font-size: 40px;
+}
+
+.Playbar .ri-skip-right-fill {
+    color: white;
+    font-size: 40px;
+}
+
+.Playbar #Play{
+    position: absolute;
+    background-color: white;
+    filter: invert(1);
+    top: 4px;
+    left: 80px;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+}
+
+.Vol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#VolRange{
+    cursor: pointer;
+}
+
+.Range input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #3d3d3d;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.Range input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.Range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    height: 12px;
+    width: 12px;
+    background: #1DB954;
+    border-radius: 50%;
+    cursor: pointer;
+    bottom: 4px;
+}
+
+.Range input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: green;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+}
+
+.Seekbar {
+    position: absolute;
+    cursor: pointer;
+    height: 5px;
+    left: 1rem;
+    width: 84%;
+    bottom: 2rem;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.SongTime{
+    position: absolute;
+    font-family: Montserrat;
+    right: 2rem;
+    bottom: 1.6rem;
+}
+
+.Circle{
+    position: absolute;
+    background-color: white;
+    transition: left 0.5s;
+    width: 12px;
+    left: 0%;
+    top: -4px;
+    height: 12px;
+    border-radius: 12px;
+}
+
+@media (max-width: 882px) {
+
+    .Body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .Hamburger{
+        position: absolute;
+        display: block;
+        top: 1.2rem;
+        left: 1rem;
+    }
+
+    #Logo {
+        position: absolute;
+        top: 12px;
+        left: 3.2rem;
+    }
+
+    .Homebtn {
+        position: absolute;
+        background-color: #121212;
+        border-radius: 45px;
+        width: 45px;
+        height: 45px;
+        top: 0.7rem;
+        left: 6rem;
+    }
+    
+    .Home{
+        height: 78vh;
+    }
+
+    #Homelogo {
+        position: absolute;
+        width: 27px;
+        top: 6px;
+        left: 7px;
+    }
+
+    .Library{
+        position: absolute;
+        left: -100%;
+        height: 90vh;
+        transition: all 0.3s;
+        z-index: 1;
+        width: 300px;
+    }
+
+    .Library .Closebtn{
+        position: absolute;
+        display: block;
+        top: 1.5rem;
+        right: 1rem;
+        z-index: 2;
+    }
+
+    .SongList {
+        position: relative;
+        height: 660px;
+        top: 14px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .Home{
+        width: 100vw;
+    }
+
+    .Playbar{
+        width: 90vw;
+        height: 64px;
+        bottom: 1rem;
+        left: 0%;
+    }
+
+    .SongCTRLandDetails{
+        position: absolute;
+        font-family: Montserrat;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0rem;
+    }
+
+    .SongCTRLandDetails .SongDetails{
+        width: auto;
+    }
+
+    .SongTime{
+        font-size: 12.5px;
+        font-family: Montserrat;
+        bottom: 12px;
+    }
+
+    .SongButtons {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        width: 200px;
+    }
+
+    .Seekbar{
+        width: 76vw;
+        bottom: 1rem;
+    }
+
+}

@@ -1,0 +1,24 @@
+{
+    "albums": [
+        {
+            "folder": "Four me",
+            "title": "Four Me",
+            "description": "Four Me by Karan Aujla"
+        },
+        {
+            "folder": "NCS",
+            "title": "NCS",
+            "description": "Non-Copyrighted Songs for you"
+        },
+        {
+            "folder": "Pop",
+            "title": "Pop",
+            "description": "Today's Pop Hits"
+        },
+        {
+            "folder": "Valorant",
+            "title": "Valorant Music",
+            "description": "The songs of victory"
+        }
+    ]
+}
